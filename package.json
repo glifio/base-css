@@ -8,7 +8,8 @@
     "dist/index.css"
   ],
   "scripts": {
-    "build": "node ./utils/build.js"
+    "build": "node ./utils/build.js",
+    "prepare": "npm run build"
   },
   "author": "Infinite Scroll <squad@infinitescroll.org> (https://infinitescroll.org)",
   "license": "(Apache-2.0 OR MIT)",
