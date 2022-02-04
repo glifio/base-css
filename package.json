@@ -1,5 +1,5 @@
 {
-  "name": "base-css",
+  "name": "@glif/base-css",
   "version": "0.0.1",
   "description": "Base style sheet for GLIF apps",
   "main": "dist/index.css",
