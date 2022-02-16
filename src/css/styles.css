@@ -1,14 +1,15 @@
 * {
-  box-sizing: border-box;
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: 'RT-Alias-Grotesk', 'system-ui', 'Segoe UI', 'Roboto', Helvetica;
+  font: inherit;
+  box-sizing: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 html {
   font-size: 16px;
+  font-weight: 400;
+  font-family: 'RT-Alias-Grotesk', 'system-ui', 'Segoe UI', 'Roboto', Helvetica;
+  box-sizing: border-box;
 }
 
 body {
