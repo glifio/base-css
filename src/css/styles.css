@@ -1,3 +1,10 @@
+:root {
+  --white-broken: #F6F8FE
+  --purple-light: #E0D7FE;
+  --purple-medium: #5E26FF;
+  --purple-dark: #290A85;
+}
+
 * {
   font: inherit;
   box-sizing: inherit;
@@ -15,11 +22,26 @@ html {
 }
 
 body {
-  background: #f6f8fe;
+  background: var(--white-broken);
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0;
   text-rendering: optimizeLegibility;
+}
+
+p {
+  margin: 1em 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--purple-medium);
+  text-decoration: none;
 }
 
 /* Alias Medium */
