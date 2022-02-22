@@ -19,9 +19,9 @@ jobs:
           # fetch full history so things like auto-changelog work properly
           fetch-depth: 0
       - name: Use Node.js ${{ env.node_version }}
-      uses: actions/setup-node@v2.1.5
-      with:
-        node-version: ${{ env.node_version }}
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: ${{ env.node_version }}
 
       - run: npm ci
 
@@ -38,4 +38,3 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
