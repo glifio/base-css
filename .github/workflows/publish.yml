@@ -1,4 +1,5 @@
 name: npm publish
+
 on:
   workflow_dispatch:
     inputs:
@@ -13,6 +14,7 @@ env:
 jobs:
   version_and_release:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2.3.4
         with:
