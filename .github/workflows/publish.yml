@@ -37,7 +37,6 @@ jobs:
 
       # publish to github and npm
       - run: npm version ${{ github.event.inputs.newversion }}
+      - run: echo //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }} > .npmrc
       - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: git push origin primary
