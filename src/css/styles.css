@@ -1,5 +1,12 @@
 :root {
+  --black: #000000;
+  --white: #FFFFFF;
   --white-broken: #F6F8FE;
+
+  --gray-light: #C4C4C4;
+  --gray-medium: #949598;
+  --gray-dark: #666666;
+
   --purple-light: #E0D7FE;
   --purple-medium: #5E26FF;
   --purple-dark: #290A85;
@@ -54,6 +61,12 @@ a {
 a:hover {
   color: var(--purple-medium);
   text-decoration: none;
+}
+
+hr {
+  margin: 1em 0;
+  border: none;
+  border-top: 1px solid var(--gray-light);
 }
 
 /* normalize.css overrides */
