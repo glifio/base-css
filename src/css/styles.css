@@ -12,10 +12,13 @@
   --purple-dark: #290A85;
 
   --green-light: #E5F9E6;
-  --green-medium: #007B39;
+  --green-dark: #007B39;
 
   --yellow-light: #F7EFE6;
-  --yellow-medium: #F6C103;
+  --yellow-dark: #F6C103;
+  
+  --red-light: #FC6D6F;
+  --red-dark: #660000;
 }
 
 * {
