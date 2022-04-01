@@ -10,6 +10,12 @@
   --purple-light: #E0D7FE;
   --purple-medium: #5E26FF;
   --purple-dark: #290A85;
+
+  --green-light: #E5F9E6;
+  --green-medium: #007B39;
+
+  --yellow-light: #F7EFE6;
+  --yellow-medium: #F6C103;
 }
 
 * {
