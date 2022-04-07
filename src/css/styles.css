@@ -19,6 +19,10 @@
   
   --red-light: #FC6D6F;
   --red-dark: #660000;
+
+  --blue-gray: #D9E0F2;
+  --blue-light: #D1DDFA;
+  --blue-medium: #BACBF7;
 }
 
 * {
