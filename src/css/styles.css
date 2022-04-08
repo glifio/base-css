@@ -82,6 +82,15 @@ hr {
   border-top: 1px solid var(--gray-light);
 }
 
+/* Disable user-select on label */
+
+label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /* Style textfield-type inputs */
 
 input[type=email],
