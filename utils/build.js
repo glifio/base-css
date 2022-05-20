@@ -1,7 +1,8 @@
 const fs = require('fs')
 const path = require('path')
 const postcss = require('postcss')
-const url = require('postcss-url')
+const postcssUrl = require('postcss-url')
+const postcssNesting = require('postcss-nesting')
 
 const normalizeCssPath = 'node_modules/normalize.css/normalize.css'
 const normalizeCss = fs.readFileSync(normalizeCssPath, 'utf8')
@@ -10,11 +11,13 @@ const stylesCss = fs.readFileSync(stylesCssPath, 'utf8')
 const outputPath = 'dist/index.css'
 const outputDir = path.dirname(outputPath);
 
-postcss()
-  .use(url({
-    url: 'inline',
-    encodeType: 'base64'
-  }))
+postcss([
+    postcssNesting,
+    postcssUrl({
+      url: 'inline',
+      encodeType: 'base64'
+    })
+  ])
   .process(stylesCss, {
     from: stylesCssPath,
     to: outputPath
@@ -37,8 +40,8 @@ postcss()
   })
 
 const getCssHeader = title => `
-/*
-* ${title}
-*/
+/* * * * * *
+ * ${title}
+ * * * * * */
 
 `
