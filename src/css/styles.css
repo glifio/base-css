@@ -153,8 +153,11 @@ hr {
  * Button elements
  */
 
+/*
+TODO: Use this for styling ButtonV2 / ButtonV2Link in react-components
 button,
 a.button,
+*/
 input[type=button] {
   display: inline-flex;
   justify-content: center;
