@@ -171,9 +171,17 @@ input[type=button] {
   background-color: transparent;
   transition: color 0.1s ease-out, border-color 0.1s ease-out, background-color 0.1s ease-out;
 
+  svg {
+    transition: fill 0.1s ease-out, stroke 0.1s ease-out;
+    &.has-fill { fill: var(--black); }
+    &.has-stroke { stroke: var(--black); }
+  }
+
   &:hover {
     color: var(--purple-medium);
     border-color: var(--purple-medium);
+    svg.has-fill { fill: var(--purple-medium); }
+    svg.has-stroke { stroke: var(--purple-medium); }
   }
 
   &:active {
@@ -181,6 +189,12 @@ input[type=button] {
     color: var(--white) !important;
     border-color: var(--purple-medium) !important;
     background-color: var(--purple-medium) !important;
+    
+    svg {
+      transition: none;
+      &.has-fill { fill: var(--white) !important; }
+      &.has-stroke { stroke: var(--white) !important; }
+    }
   }
 
   &.large {
@@ -190,22 +204,30 @@ input[type=button] {
   &.white {
     color: var(--white);
     border-color: var(--white);
+    svg.has-fill { fill: var(--white); }
+    svg.has-stroke { stroke: var(--white); }
   }
 
   &.gray {
     color: var(--gray-dark);
     border-color: var(--gray-dark);
+    svg.has-fill { fill: var(--gray-dark); }
+    svg.has-stroke { stroke: var(--gray-dark); }
   }
 
   &.red {
     color: var(--white);
     border-color: var(--red-medium);
     background-color: var(--red-medium);
+    svg.has-fill { fill: var(--white); }
+    svg.has-stroke { stroke: var(--white); }
 
     &:hover {
       color: var(--red-medium);
       border-color: var(--red-medium);
       background-color: var(--white);
+      svg.has-fill { fill: var(--red-medium); }
+      svg.has-stroke { stroke: var(--red-medium); }
     }
   }
 
@@ -213,11 +235,15 @@ input[type=button] {
     color: var(--white);
     border-color: var(--green-medium);
     background-color: var(--green-medium);
+    svg.has-fill { fill: var(--white); }
+    svg.has-stroke { stroke: var(--white); }
 
     &:hover {
       color: var(--green-medium);
       border-color: var(--green-medium);
       background-color: var(--white);
+      svg.has-fill { fill: var(--green-medium); }
+      svg.has-stroke { stroke: var(--green-medium); }
     }
   }
 
@@ -227,6 +253,8 @@ input[type=button] {
     color: var(--gray-medium);
     border-color: var(--gray-medium);
     background-color: transparent;
+    svg.has-fill { fill: var(--gray-medium); }
+    svg.has-stroke { stroke: var(--gray-medium); }
   }
 }
 
