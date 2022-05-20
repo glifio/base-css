@@ -150,6 +150,47 @@ hr {
 }
 
 /**
+ * Button elements
+ */
+
+// Button base
+button,
+a.button,
+input[type=button] {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  gap: 0.75em;
+  padding: 0.5em 0.75em;
+  color: var(--black);
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  background: transparent;
+  transition: color 0.1s ease-out, border-color 0.1s ease-out, background-color 0.1s ease-out;
+}
+
+// Button hover
+button:hover,
+a.button:hover,
+input[type=button]:hover {
+  color: var(--purple-medium);
+  border-color: var(--purple-medium);
+}
+
+// Button active
+button:active,
+a.button:active,
+input[type=button]:active {
+  color: var(--white) !important;
+  border-color: var(--purple-medium) !important;
+  background-color: var(--purple-medium) !important;
+  transition: none;
+}
+
+/**
  * Input elements
  */
 
