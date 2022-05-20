@@ -33,46 +33,6 @@
 }
 
 /**
- * Font definitions
- */
-
-@font-face {
-  font-family: 'RT-Alias-Medium';
-  src: url('../fonts/RTAliasMedium-Light.woff2');
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: 'RT-Alias-Medium';
-  src: url('../fonts/RTAliasMedium-Regular.woff2');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'RT-Alias-Medium';
-  src: url('../fonts/RTAliasMedium-Bold.woff2');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'RT-Alias-Grotesk';
-  src: url('../fonts/RTAliasGrotesk-Light.woff2');
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: 'RT-Alias-Grotesk';
-  src: url('../fonts/RTAliasGrotesk-Regular.woff2');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'RT-Alias-Grotesk';
-  src: url('../fonts/RTAliasGrotesk-Bold.woff2');
-  font-weight: 700;
-}
-
-/**
  * Normalize.css overrides
  */
 
@@ -320,4 +280,44 @@ input::-webkit-inner-spin-button {
 }
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+/**
+ * Font definitions
+ */
+
+@font-face {
+  font-family: 'RT-Alias-Medium';
+  src: url('../fonts/RTAliasMedium-Light.woff2');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'RT-Alias-Medium';
+  src: url('../fonts/RTAliasMedium-Regular.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'RT-Alias-Medium';
+  src: url('../fonts/RTAliasMedium-Bold.woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'RT-Alias-Grotesk';
+  src: url('../fonts/RTAliasGrotesk-Light.woff2');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'RT-Alias-Grotesk';
+  src: url('../fonts/RTAliasGrotesk-Regular.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'RT-Alias-Grotesk';
+  src: url('../fonts/RTAliasGrotesk-Bold.woff2');
+  font-weight: 700;
 }
