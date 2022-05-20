@@ -216,57 +216,29 @@ input[type=text] {
   background-color: var(--blue-light);
   color: var(--black);
   transition: color 0.1s ease-out, background-color 0.1s ease-out;
-}
 
-// Text input hover / focus
-input[type=email]:hover,
-input[type=email]:focus,
-input[type=number]:hover,
-input[type=number]:focus,
-input[type=password]:hover,
-input[type=password]:focus,
-input[type=search]:hover,
-input[type=search]:focus,
-input[type=text]:hover,
-input[type=text]:focus {
-  background-color: var(--blue-medium);
-  color: var(--black);
-}
+  &:hover,
+  &:focus {
+    background-color: var(--blue-medium);
+    color: var(--black);
+  }
 
-// Text input error
-input[type=email].error,
-input[type=number].error,
-input[type=password].error,
-input[type=search].error,
-input[type=text].error {
-  background-color: var(--red-light);
-  color: var(--red-dark);
-}
+  &.error {
+    background-color: var(--red-light);
+    color: var(--red-dark);
 
-// Text input error + hover / focus
-input[type=email].error:hover,
-input[type=email].error:focus,
-input[type=number].error:hover,
-input[type=number].error:focus,
-input[type=password].error:hover,
-input[type=password].error:focus,
-input[type=search].error:hover,
-input[type=search].error:focus,
-input[type=text].error:hover,
-input[type=text].error:focus {
-  background-color: var(--red-medium);
-  color: var(--black);
-}
+    &:hover,
+    &:focus {
+      background-color: var(--red-medium);
+      color: var(--black);
+    }
+  }
 
-// Text input disabled
-input[type=email]:disabled,
-input[type=number]:disabled,
-input[type=password]:disabled,
-input[type=search]:disabled,
-input[type=text]:disabled {
-  pointer-events: none;
-  background-color: var(--gray-light);
-  color: var(--gray-dark);
+  &:disabled {
+    pointer-events: none;
+    background-color: var(--gray-light);
+    color: var(--gray-dark);
+  }
 }
 
 /* Remove number input arrows */
