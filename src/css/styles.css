@@ -1,3 +1,7 @@
+/**
+ * CSS variables
+ */
+
 :root {
   --black: #000000;
   --white: #FFFFFF;
@@ -28,6 +32,22 @@
   --blue-dark: #7FA2FA;
 }
 
+/**
+ * Normalize.css overrides
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  line-height: inherit;
+}
+
+/**
+ * Generic styling
+ */
+
 * {
   font: inherit;
   box-sizing: inherit;
@@ -48,21 +68,25 @@ body {
   background-color: var(--white-broken);
 }
 
+/**
+ * Base elements
+ */
+
 h1, h2, h3, h4, h5, h6 {
   margin: 1em 0;
   text-rendering: optimizeLegibility;
 }
 
 h1 {
-  font-size: 2.5rem
+  font-size: 2.5em
 }
 
 h2 {
-  font-size: 1.75rem
+  font-size: 1.75em
 }
 
 h3 {
-  font-size: 1.375rem
+  font-size: 1.375em
 }
 
 p {
@@ -85,8 +109,123 @@ hr {
   border-top: 1px solid var(--gray-light);
 }
 
-/* Disable user-select on label */
+/**
+ * Button elements
+ */
 
+/*
+TODO: Use this for styling ButtonV2 / ButtonV2Link in react-components
+button,
+a.button,
+*/
+input[type=button] {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  gap: 0.75em;
+  padding: 0.5em 0.75em;
+  color: var(--black);
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  background-color: transparent;
+  transition: color 0.1s ease-out, border-color 0.1s ease-out, background-color 0.1s ease-out;
+
+  svg {
+    transition: fill 0.1s ease-out, stroke 0.1s ease-out;
+    &.has-fill { fill: var(--black); }
+    &.has-stroke { stroke: var(--black); }
+  }
+
+  &:hover {
+    color: var(--purple-medium);
+    border-color: var(--purple-medium);
+    svg.has-fill { fill: var(--purple-medium); }
+    svg.has-stroke { stroke: var(--purple-medium); }
+  }
+
+  &:active {
+    transition: none;
+    color: var(--white) !important;
+    border-color: var(--purple-medium) !important;
+    background-color: var(--purple-medium) !important;
+    
+    svg {
+      transition: none;
+      &.has-fill { fill: var(--white) !important; }
+      &.has-stroke { stroke: var(--white) !important; }
+    }
+  }
+
+  &.large {
+    font-size: 1.25em;
+  }
+
+  &.white {
+    color: var(--white);
+    border-color: var(--white);
+    svg.has-fill { fill: var(--white); }
+    svg.has-stroke { stroke: var(--white); }
+  }
+
+  &.gray {
+    color: var(--gray-dark);
+    border-color: var(--gray-dark);
+    svg.has-fill { fill: var(--gray-dark); }
+    svg.has-stroke { stroke: var(--gray-dark); }
+  }
+
+  &.red {
+    color: var(--white);
+    border-color: var(--red-medium);
+    background-color: var(--red-medium);
+    svg.has-fill { fill: var(--white); }
+    svg.has-stroke { stroke: var(--white); }
+
+    &:hover {
+      color: var(--red-medium);
+      border-color: var(--red-medium);
+      background-color: var(--white);
+      svg.has-fill { fill: var(--red-medium); }
+      svg.has-stroke { stroke: var(--red-medium); }
+    }
+  }
+
+  &.green {
+    color: var(--white);
+    border-color: var(--green-medium);
+    background-color: var(--green-medium);
+    svg.has-fill { fill: var(--white); }
+    svg.has-stroke { stroke: var(--white); }
+
+    &:hover {
+      color: var(--green-medium);
+      border-color: var(--green-medium);
+      background-color: var(--white);
+      svg.has-fill { fill: var(--green-medium); }
+      svg.has-stroke { stroke: var(--green-medium); }
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+    color: var(--gray-medium);
+    border-color: var(--gray-medium);
+    background-color: transparent;
+    svg.has-fill { fill: var(--gray-medium); }
+    svg.has-stroke { stroke: var(--gray-medium); }
+  }
+}
+
+/**
+ * Input elements
+ */
+
+/* Disable user-select on label */
 label {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -95,8 +234,7 @@ label {
   cursor: pointer;
 }
 
-/* Style textfield-type inputs */
-
+/* Textfield-type inputs */
 input[type=email],
 input[type=number],
 input[type=password],
@@ -108,53 +246,33 @@ input[type=text] {
   border-radius: 4px;
   background-color: var(--blue-light);
   color: var(--black);
-}
-input[type=email]:hover,
-input[type=email]:focus,
-input[type=number]:hover,
-input[type=number]:focus,
-input[type=password]:hover,
-input[type=password]:focus,
-input[type=search]:hover,
-input[type=search]:focus,
-input[type=text]:hover,
-input[type=text]:focus {
-  background-color: var(--blue-medium);
-  color: var(--black);
-}
-input[type=email].error,
-input[type=number].error,
-input[type=password].error,
-input[type=search].error,
-input[type=text].error {
-  background-color: var(--red-light);
-  color: var(--red-dark);
-}
-input[type=email].error:hover,
-input[type=email].error:focus,
-input[type=number].error:hover,
-input[type=number].error:focus,
-input[type=password].error:hover,
-input[type=password].error:focus,
-input[type=search].error:hover,
-input[type=search].error:focus,
-input[type=text].error:hover,
-input[type=text].error:focus {
-  background-color: var(--red-medium);
-  color: var(--black);
-}
-input[type=email]:disabled,
-input[type=number]:disabled,
-input[type=password]:disabled,
-input[type=search]:disabled,
-input[type=text]:disabled {
-  pointer-events: none;
-  background-color: var(--gray-light);
-  color: var(--gray-dark);
+  transition: color 0.1s ease-out, background-color 0.1s ease-out;
+
+  &:hover,
+  &:focus {
+    background-color: var(--blue-medium);
+    color: var(--black);
+  }
+
+  &.error {
+    background-color: var(--red-light);
+    color: var(--red-dark);
+
+    &:hover,
+    &:focus {
+      background-color: var(--red-medium);
+      color: var(--black);
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+    background-color: var(--gray-light);
+    color: var(--gray-dark);
+  }
 }
 
 /* Remove number input arrows */
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -164,17 +282,9 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-/* normalize.css overrides */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  line-height: inherit;
-}
-
-/* Alias Medium */
+/**
+ * Font definitions
+ */
 
 @font-face {
   font-family: 'RT-Alias-Medium';
@@ -193,8 +303,6 @@ textarea {
   src: url('../fonts/RTAliasMedium-Bold.woff2');
   font-weight: 700;
 }
-
-/* Alias Grotesk */
 
 @font-face {
   font-family: 'RT-Alias-Grotesk';
