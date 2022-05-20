@@ -194,7 +194,7 @@ input[type=button]:active {
  * Input elements
  */
 
-// Disable user-select on label
+/* Disable user-select on label */
 label {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -203,7 +203,7 @@ label {
   cursor: pointer;
 }
 
-// Text input base
+/* Textfield-type inputs */
 input[type=email],
 input[type=number],
 input[type=password],
@@ -269,7 +269,7 @@ input[type=text]:disabled {
   color: var(--gray-dark);
 }
 
-// Remove number input arrows
+/* Remove number input arrows */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
