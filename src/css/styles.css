@@ -84,6 +84,10 @@ textarea {
   line-height: inherit;
 }
 
+/**
+ * Generic styling
+ */
+
 * {
   font: inherit;
   box-sizing: inherit;
@@ -103,6 +107,10 @@ html {
 body {
   background-color: var(--white-broken);
 }
+
+/**
+ * Base elements
+ */
 
 h1, h2, h3, h4, h5, h6 {
   margin: 1em 0;
@@ -141,8 +149,11 @@ hr {
   border-top: 1px solid var(--gray-light);
 }
 
-/* Disable user-select on label */
+/**
+ * Input elements
+ */
 
+// Disable user-select on label
 label {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -151,8 +162,7 @@ label {
   cursor: pointer;
 }
 
-/* Style textfield-type inputs */
-
+// Text input base
 input[type=email],
 input[type=number],
 input[type=password],
@@ -164,7 +174,10 @@ input[type=text] {
   border-radius: 4px;
   background-color: var(--blue-light);
   color: var(--black);
+  transition: background-color 0.1s ease-out, color 0.1s ease-out;
 }
+
+// Text input hover / focus
 input[type=email]:hover,
 input[type=email]:focus,
 input[type=number]:hover,
@@ -178,6 +191,8 @@ input[type=text]:focus {
   background-color: var(--blue-medium);
   color: var(--black);
 }
+
+// Text input error
 input[type=email].error,
 input[type=number].error,
 input[type=password].error,
@@ -186,6 +201,8 @@ input[type=text].error {
   background-color: var(--red-light);
   color: var(--red-dark);
 }
+
+// Text input error + hover / focus
 input[type=email].error:hover,
 input[type=email].error:focus,
 input[type=number].error:hover,
@@ -199,6 +216,8 @@ input[type=text].error:focus {
   background-color: var(--red-medium);
   color: var(--black);
 }
+
+// Text input disabled
 input[type=email]:disabled,
 input[type=number]:disabled,
 input[type=password]:disabled,
@@ -209,8 +228,7 @@ input[type=text]:disabled {
   color: var(--gray-dark);
 }
 
-/* Remove number input arrows */
-
+// Remove number input arrows
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
