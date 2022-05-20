@@ -174,7 +174,7 @@ input[type=text] {
   border-radius: 4px;
   background-color: var(--blue-light);
   color: var(--black);
-  transition: background-color 0.1s ease-out, color 0.1s ease-out;
+  transition: color 0.1s ease-out, background-color 0.1s ease-out;
 }
 
 // Text input hover / focus
