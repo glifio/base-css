@@ -160,6 +160,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
   gap: 0.75em;
@@ -167,7 +168,7 @@ input[type=button] {
   color: var(--black);
   border: 1px solid var(--black);
   border-radius: 8px;
-  background: transparent;
+  background-color: transparent;
   transition: color 0.1s ease-out, border-color 0.1s ease-out, background-color 0.1s ease-out;
 
   &:hover {
@@ -176,10 +177,56 @@ input[type=button] {
   }
 
   &:active {
+    transition: none;
     color: var(--white) !important;
     border-color: var(--purple-medium) !important;
     background-color: var(--purple-medium) !important;
-    transition: none;
+  }
+
+  &.large {
+    font-size: 1.25em;
+  }
+
+  &.white {
+    color: var(--white);
+    border-color: var(--white);
+  }
+
+  &.gray {
+    color: var(--gray-dark);
+    border-color: var(--gray-dark);
+  }
+
+  &.red {
+    color: var(--white);
+    border-color: var(--red-medium);
+    background-color: var(--red-medium);
+
+    &:hover {
+      color: var(--red-medium);
+      border-color: var(--red-medium);
+      background-color: var(--white);
+    }
+  }
+
+  &.green {
+    color: var(--white);
+    border-color: var(--green-medium);
+    background-color: var(--green-medium);
+
+    &:hover {
+      color: var(--green-medium);
+      border-color: var(--green-medium);
+      background-color: var(--white);
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+    color: var(--gray-medium);
+    border-color: var(--gray-medium);
+    background-color: transparent;
   }
 }
 
