@@ -140,7 +140,8 @@ input[type=button] {
     &.has-stroke { stroke: var(--black); }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--purple-medium);
     border-color: var(--purple-medium);
     svg.has-fill { fill: var(--purple-medium); }
@@ -185,7 +186,8 @@ input[type=button] {
     svg.has-fill { fill: var(--white); }
     svg.has-stroke { stroke: var(--white); }
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: var(--red-medium);
       border-color: var(--red-medium);
       background-color: var(--white);
@@ -201,7 +203,8 @@ input[type=button] {
     svg.has-fill { fill: var(--white); }
     svg.has-stroke { stroke: var(--white); }
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: var(--green-medium);
       border-color: var(--green-medium);
       background-color: var(--white);
