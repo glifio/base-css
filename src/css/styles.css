@@ -1,3 +1,7 @@
+/**
+ * CSS variables
+ */
+
 :root {
   --black: #000000;
   --white: #FFFFFF;
@@ -26,6 +30,58 @@
   --blue-light: #D1DDFA;
   --blue-medium: #BACBF7;
   --blue-dark: #7FA2FA;
+}
+
+/**
+ * Font definitions
+ */
+
+@font-face {
+  font-family: 'RT-Alias-Medium';
+  src: url('../fonts/RTAliasMedium-Light.woff2');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'RT-Alias-Medium';
+  src: url('../fonts/RTAliasMedium-Regular.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'RT-Alias-Medium';
+  src: url('../fonts/RTAliasMedium-Bold.woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'RT-Alias-Grotesk';
+  src: url('../fonts/RTAliasGrotesk-Light.woff2');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'RT-Alias-Grotesk';
+  src: url('../fonts/RTAliasGrotesk-Regular.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'RT-Alias-Grotesk';
+  src: url('../fonts/RTAliasGrotesk-Bold.woff2');
+  font-weight: 700;
+}
+
+/**
+ * Normalize.css overrides
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  line-height: inherit;
 }
 
 * {
@@ -162,54 +218,4 @@ input::-webkit-inner-spin-button {
 }
 input[type=number] {
   -moz-appearance: textfield;
-}
-
-/* normalize.css overrides */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  line-height: inherit;
-}
-
-/* Alias Medium */
-
-@font-face {
-  font-family: 'RT-Alias-Medium';
-  src: url('../fonts/RTAliasMedium-Light.woff2');
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: 'RT-Alias-Medium';
-  src: url('../fonts/RTAliasMedium-Regular.woff2');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'RT-Alias-Medium';
-  src: url('../fonts/RTAliasMedium-Bold.woff2');
-  font-weight: 700;
-}
-
-/* Alias Grotesk */
-
-@font-face {
-  font-family: 'RT-Alias-Grotesk';
-  src: url('../fonts/RTAliasGrotesk-Light.woff2');
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: 'RT-Alias-Grotesk';
-  src: url('../fonts/RTAliasGrotesk-Regular.woff2');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'RT-Alias-Grotesk';
-  src: url('../fonts/RTAliasGrotesk-Bold.woff2');
-  font-weight: 700;
 }
