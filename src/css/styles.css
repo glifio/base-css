@@ -91,10 +91,21 @@ h3 {
 
 p {
   margin: 1em 0;
+
+  /* Used for "Click to see more ↓" lines */
+  &[role="button"] {
+    color: var(--purple-medium);
+    cursor: pointer;
+  }
+
+  &[role="status"] {
+    color: var(--gray-dark);
+  }
 }
 
 a {
   color: inherit;
+  transition: color 0.1s ease-out;
   text-decoration: underline;
 }
 
