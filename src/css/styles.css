@@ -34,6 +34,12 @@
   --space-s: 5px;
   --space-m: 10px;
   --space-l: 20px;
+  --space-xl: 40px;
+
+  --space-ns: -5px;
+  --space-nm: -10px;
+  --space-nl: -20px;
+  --space-nxl: -40px;
 }
 
 /**
