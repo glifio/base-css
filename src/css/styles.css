@@ -30,6 +30,10 @@
   --blue-light: #D1DDFA;
   --blue-medium: #BACBF7;
   --blue-dark: #7FA2FA;
+
+  --space-s: 5px;
+  --space-m: 10px;
+  --space-l: 20px;
 }
 
 /**
