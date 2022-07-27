@@ -149,6 +149,12 @@ table {
 tr {
   height: 4.5em;
   border-top: 1px solid var(--gray-light);
+  transition: background-color 0.1s ease-out;
+}
+
+tr.selectable:hover {
+  cursor: pointer;
+  background-color: var(--blue-gray);
 }
 
 th {
