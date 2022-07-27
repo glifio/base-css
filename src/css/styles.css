@@ -137,6 +137,51 @@ hr {
 }
 
 /**
+ * Table elements
+ */
+
+table {
+  width: 100%;
+  border-bottom: 1px solid var(--gray-light);
+  border-collapse: collapse;
+}
+
+tr {
+  height: 4.5em;
+  border-top: 1px solid var(--gray-light);
+}
+
+th {
+  color: var(--gray-medium);
+  font-size: var(--font-size-l);
+  font-weight: 400;
+}
+
+td {
+  color: var(--gray-dark);
+}
+
+td a {
+  color: var(--purple-medium);
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+th, td {
+  text-align: left;
+  white-space: nowrap;
+  padding-right: 1.5rem;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+/**
  * Button elements
  */
 
