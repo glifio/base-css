@@ -187,6 +187,30 @@ td:last-child {
   padding-right: 0;
 }
 
+caption {
+  caption-side: bottom;
+  text-align: center;
+  padding: 1em;
+  margin: var(--space-m) 0;
+  color: var(--gray-medium);
+  border-radius: 4px;
+}
+
+caption.success {
+  background-color: var(--green-light);
+  color: var(--green-dark);
+}
+
+caption.warning {
+  background-color: var(--yellow-light);
+  color: var(--yellow-dark);
+}
+
+caption.error {
+  background-color: var(--red-light);
+  color: var(--red-dark);
+}
+
 /**
  * Button elements
  */
