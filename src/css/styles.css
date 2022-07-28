@@ -368,6 +368,11 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+/* Add pointer cursor on search cancel button */
+input::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+
 /**
  * Font definitions
  */
