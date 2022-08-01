@@ -94,15 +94,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: var(--font-size-xxl)
+  font-size: var(--font-size-xxl);
 }
 
 h2 {
-  font-size: var(--font-size-xl)
+  font-size: var(--font-size-xl);
 }
 
 h3 {
-  font-size: var(--font-size-l)
+  font-size: var(--font-size-l);
 }
 
 p {
