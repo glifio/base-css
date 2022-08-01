@@ -46,11 +46,6 @@
   --font-size-l: 1.25rem;
   --font-size-xl: 1.75rem;
   --font-size-xxl: 2.5rem;
-
-  --phone-max-width: 767px;
-  --tablet-min-width: 768px;
-  --tablet-max-width: 1199px;
-  --desktop-min-width: 1200px;
 }
 
 /**
