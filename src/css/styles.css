@@ -179,12 +179,12 @@ td a:hover {
 th, td {
   text-align: left;
   white-space: nowrap;
-  padding-right: 1.5rem;
+  padding-right: 1rem;
 }
 
-th:last-child,
-td:last-child {
-  padding-right: 0;
+th:first-child,
+td:first-child {
+  padding-left: 1rem;
 }
 
 caption {
