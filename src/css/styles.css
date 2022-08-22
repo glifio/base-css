@@ -360,11 +360,16 @@ label {
 
 /* Textfield-type inputs */
 select,
+input[type=date],
+input[type=datetime-local],
 input[type=email],
+input[type=month],
 input[type=number],
 input[type=password],
 input[type=search],
-input[type=text] {
+input[type=text],
+input[type=time],
+input[type=week] {
   padding: 0.7em 1em;
   opacity: 1;
   outline: none;
